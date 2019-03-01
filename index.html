@@ -19,8 +19,10 @@
     <p>This is my first website</p>
     <script>
       OneSignal.push(function() {
-        OneSignal.sendTag("key", "value", function(tagsSent) {
+        OneSignal.sendTag("key", "hello", function(tagsSent) {
     // Callback called when tags have finished sending
+          console.log(tagSent);
+          
   });
       }); </script>
   </body>
